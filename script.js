@@ -79,4 +79,25 @@ document.addEventListener('DOMContentLoaded', () => {
     duration: 1000,
     interval: 500,
   });
+
+  ScrollReveal().reveal('.product__content img', {
+    ...scrollRevealOption,
+  });
+
+  ScrollReveal().reveal('.product__content p', {
+    ...scrollRevealOption,
+    delay: 500,
+  });
+
+  ScrollReveal().reveal('.product__btn', {
+    ...scrollRevealOption,
+    delay: 1000,
+  });
+
+  ScrollReveal().reveal('.product__list li', {
+    ...scrollRevealOption,
+    duration: 1000,
+    interval: 500,
+    delay: 1500,
+  });
 });
