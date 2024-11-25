@@ -69,4 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
     interval: 500,
     delay: 2000,
   });
+
+  ScrollReveal().reveal('.banner__card', {
+    ...scrollRevealOption,
+    interval: 500,
+  });
 });
