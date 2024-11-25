@@ -203,6 +203,62 @@ nav {
   background-color: #dede22;
 }
 
+.feature__container {
+  display: grid;
+  gap: 2rem;
+}
+
+.feature__content p {
+  padding-block: 2rem 4rem;
+  color: var(--text-light);
+}
+
+.feature__grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.feature__card {
+  padding: 1rem;
+  border: 2px solid var(--extra-light);
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.feature__card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature__card span {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-size: 2rem;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+.feature__card:hover span {
+  color: var(--primary-color);
+}
+
+.feature__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.feature__card p {
+  color: var(--text-light);
+}
+
+@media screen and (min-width: 540px) {
+  .feature__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (min-width: 768px) {
   header {
     position: relative;
@@ -286,5 +342,9 @@ nav {
 
   .header__btns {
     justify-content: flex-start;
+  }
+
+  .feature__container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
