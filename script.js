@@ -74,4 +74,9 @@ document.addEventListener('DOMContentLoaded', () => {
     ...scrollRevealOption,
     interval: 500,
   });
+
+  ScrollReveal().reveal('.specs__card', {
+    duration: 1000,
+    interval: 500,
+  });
 });
